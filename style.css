@@ -39,7 +39,88 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: var(--black);
  }
- .btn{
+
+.home__swiper{
+    margin: initial;
+}
+
+.home__data{
+    margin-left: 2rem;
+   
+}
+.home__title {
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Adjust font size as needed */
+}
+.home__description{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.home__article,
+.home__img{
+    width: 220px;
+    transition: scale .4s;
+
+}
+.home__article{
+    scale: .8;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+    scale:1;
+}
+.home__swiper .swiper-wrapper {
+    display: flex;  
+    gap: 20px; /* Adjust this value as needed */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+}
+
+.home__article {
+    flex: 0 0 auto;
+   
+    width: calc((80% - 70px) / 3); /* Adjust this value as needed */
+    margin: 0; /* Reset margin */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.home__img {
+    width: 20%;
+    height: 80%;
+    
+}
+.home__container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Add space between elements */
+}
+
+
+.home__text {
+    margin-top: 1rem; /* Add margin between the title and text */
+}
+ 
+
+@media (max-width: 768px) {
+    .home__container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .home__data,
+    .home__images {
+        width: 100%; /* Make elements take full width on small screens */
+        margin-bottom: 2rem;
+        margin-left: 2;
+    }
+}
+
+.btn{
     margin-top: 1rem;
     display: inline-block;
     padding: .9rem 3rem;
@@ -51,6 +132,11 @@ html::-webkit-scrollbar-thumb{
     font-weight: 500;
  }
  
+
+
+
+
+
 btn:hover{
     background: var(--dark-color);
 }
@@ -265,9 +351,6 @@ btn:hover{
 
 
 
-
-
-
 @media (max-width:991px){
 
     html{
@@ -318,30 +401,3 @@ btn:hover{
         font-size: 50%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

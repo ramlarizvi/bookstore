@@ -1,52 +1,53 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>bookstore web application</title>
-       <!--css link-->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
-    </head>
-    <body>
-        <!--header section starts-->
-        <header class="header">
-            <div class="header-1">
-                <a href="#" class="logo"><i class="fa fa-book"></i>The fiction Forge</a>
-                <form action="" class="search-form">
-                <input type="search" name="" placeholder="search here..." id="search-box">
-                <label for="search-box" class="fas fa-search"></label>
-                </form>
-                <div class="icons">
-                    <div id="search-btn" class="fas fa-search"></div>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <div id="login-btn" class="fas fa-user"></div>
-                </div>
-            </div>
-            <div class="header-2">
-                <nav class="navbar">
-                    <a href="#home">home</a>
-                    <a href="#featured">featured</a>
-                    <a href="#arrivals">arrivals</a>
-                    <a href="#reviews">reviews</a>
-                    <a href="#contact">contact</a>
-                </nav>
+<head>
+    <title>bookstore web application</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+<!--header section starts-->
+<header class="header">
+    <div class="header-1">
+        <a href="#" class="logo"><i class="fa fa-book"></i>The fiction Forge</a>
+        <form action="#" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">featured</a>
+            <a href="#arrivals">arrivals</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </div>
+</header>
+<!--header section ends-->
 
-            </div>
-        </header>   
-        <!--header section ends-->
-
-        <!--bottom navbar-->
-        <nav class="bottom-navbar">
-            <a href="#home" class="fas fa-home"></a>
-            <a href="#featured" class="fas fa-list"></a>
-            <a href="#arrivals" class="fas fa-tags"></a>
-            <a href="#reviews" class="fas fa-comments"></a>
-            <a href="#contact" class="fas fa-blog"></a>
-        </nav>  
+<!--bottom navbar-->
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#contact" class="fas fa-blog"></a>
+</nav>
 
 <!--login form-->
 <div class="login-form-container">
     <div id="close-login-btn" class="fas fa-times"></div>
-    <form action="">
+    <form action="#">
         <h3>sign in</h3>
         <span>username</span>
         <input type="email" name="" class="box" placeholder="enter your email" id="">
@@ -61,14 +62,57 @@
         <p>don't have an account?<a href="#">create one</a></p>
     </form>
 </div>
-
-
-
-
-</section>
+<!--home section starts-->
+<main class="main">
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Browse & <br>
+                    Select E-Books
+                </h1>
+                <div class="home--text">
+                <p class="home__description">
+                    Find the best e-Books from your favorite
+                    writers, explore hundreds of books with all
+                    possible categories, take advantage of the 
+                    20% discount for orders more than $100
+                </p>
+                <a href="#" class="btn">Explore Now</a>
+            </div>
+            </div>
+            <div class="home__images">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                            <img src="1.jpg" alt="image" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="2.webp" alt="image" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="3.jpg" alt="image" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="4.jpg" alt="image" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="5.jpg" alt="image" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="6.jpg" alt="image" class="home__img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <!--home section ends-->
 
-        <!--js link-->
-        <script src="script.js"></script>
-    </body>
+
+<script src="swiper-bundle.min.js"></script>
+<!--js link-->
+<script src="script.js"></script>
+</body>
 </html>
